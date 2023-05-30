@@ -10,6 +10,7 @@ when using the code provided here.
 `VEM.Boltzmann`: function to calculate the parameter value using variational Bayes approximation method which comes from the source code `VEM.R`
 
 Rstudio needs to be installed to run the code with the following dependencies:
+
 *R.matlab package
 *tidyr package
 
