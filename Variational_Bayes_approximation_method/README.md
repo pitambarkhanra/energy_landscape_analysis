@@ -6,8 +6,8 @@ when using the code provided here.
 
 --This code gives you the parameter value for the energy landscape analysis of fMRI data using variational Bayes approximation method.
 
-''Bayesian_main.R": main function to calculate the parameter value for the energy landscape analysis, which uses the following function
-`VEM.Boltzmann`: function to calculate the parameter value using variational Bayes approximation method which comes from the source code "VEM.R"
+`Bayesian_main.R`: main function to calculate the parameter value for the energy landscape analysis, which uses the following function
+`VEM.Boltzmann`: function to calculate the parameter value using variational Bayes approximation method which comes from the source code `VEM.R`
 
 Rstudio needs to be installed to run the code with the following dependencies:
 *R.matlab package
