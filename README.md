@@ -1,7 +1,7 @@
 # energy_landscape_analysis
-Energy landscape analysis of fMRI data
+Here we provide codes and exaxmple usages for energy landscape analysis of multivariate time series data such as fMRI data.
 
-There are two folders in this repository:
+There are the following two folders in this repository.
 
-Conventional_method: is to calculate energy landscape analysis using the conventional pairwise entropy model
-Variational_Bayes_approximation_method: is to calculate the energy landscape analysis using variational Bayes approximation method.
+Conventional: To carry out energy landscape analysis using the pairwise entropy model (i.e., Ising model) inferred by the conventional gradient-ascent algorithm.
+Variational_Bayes: To carry out energy landscape analysis using variational Bayes approximation method.
