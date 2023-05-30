@@ -11,8 +11,12 @@ When you use the code provided here, please cite the following two papers:
 
 --This code gives you the parameter value for the energy landscape analysis of fMRI data using variational Bayes approximation method.
 
+[NM: Show usage example in command line format. Also, format it very well, by mimicking other examples on github.]
+
 `Bayesian_main.R`: main function to calculate the parameter value for the energy landscape analysis, which uses the following function
 `VEM.Boltzmann`: function to calculate the parameter value using variational Bayes approximation method which comes from the source code `VEM.R`
+
+[NM: Also, make section (?) to state dependency more neatly, by mimicking others. This readme should have sections, like Usage, Depenedency etc. (but the section headings should follow a standard convention, too, if Usage, Dependency etc. are not really good section headings. Observe good examples, please.]
 
 Rstudio needs to be installed to run the code with the following dependencies:
 
