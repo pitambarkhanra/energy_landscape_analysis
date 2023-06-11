@@ -23,7 +23,7 @@ To start with: Run **Energy_landscape_analysis.m** to calculate the four discrep
 
 # Sample dataset:
 Example usage of **Energy_landscape_analysis.m** with dummy data sets named "SampleData_Binarized_Subject_i_Session_j.mat" which contains 7 ROIs and 1000 time points. 
-$i=1,2$ denotes the participants and $j=1,2$ denotes the sessions.
+i=1,2 denotes the participants and j=1,2 denotes the sessions.
 
 # Input:
 - No of ROIs in line 2
