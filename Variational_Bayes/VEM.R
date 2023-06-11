@@ -156,7 +156,7 @@ ELBO.Boltzmann <- function(x, N, subj, eta, alpha, mu, beta)
   return(ans)
 }
 
-VEM.Boltzmann <- function(x, N, subj, tol = 5e-8, max.iter = 400, doplot = TRUE, dotrace = TRUE)
+VEM.Boltzmann <- function(x, N, subj, tol = 5e-6, max.iter = 4000, doplot = TRUE, dotrace = TRUE)
 {
   # x: stacked data set
   # N: number of subjects in x
