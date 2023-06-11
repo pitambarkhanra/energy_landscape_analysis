@@ -31,7 +31,7 @@ i=1,2 denotes the participants and j=1,2 denotes the sessions.
 - Session list in line 4
 - Threshold to choose significant local minima in line 5
 
-#Output:
+# Output:
 - "d1_*" indicates the discrepancy measures calculated for within participants and "d2_*" indicates the same for between participants.
 - "*_Interaction_strength": indicates the discrepancy measure described in subsection $2.7.1$ of the article Khanra *et al.* 2023.
 - "*_Hamming_dist":  indicates the discrepancy measure described in subsection $2.7.2$ of the article Khanra *et al.* 2023.
