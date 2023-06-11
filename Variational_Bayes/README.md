@@ -12,7 +12,7 @@ This code gives you the parameter value for the energy landscape analysis of fMR
 
 [NM: Show usage example in command line format. Also, format it very well, by mimicking other examples on github.]
 # Software and packages:
-- RStudio or any compatible software to run R language $+$ *R.matlab package and *tidyr package
+- RStudio or any compatible software $+$ *R.matlab package and *tidyr package
 
 # How to use?
 open RStudio and run the file "Bayesian_main.R"
