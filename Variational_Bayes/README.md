@@ -21,13 +21,13 @@ Bayesian_main.R: main function to calculate the parameter value for the energy l
 
 [NM: Also be explicit in what the input is and what the output is.]
 # Sample dataset:
-Contains example usage of "Bayesian_main.R" with dummy data named "Sample_data.mat" which contains the concatenated dataset for 4 participants and 1000 time points in each subject. [NM: Change this 818 to something like e.g. 1000. This is dummy data, right? It should be. We cannot upload real data or modified real data because they do not belong to us.] [PK: Done]
+Contains [NM: What is the argument of this sentence? What file contains the example usage?] an example usage of `Bayesian_main.R` with a dummy data set named `Sample_data.mat`. The file `Sample_data.mat' contains a synthetic concatenated data from 4 participants and 1000 time points for each participant.
 
 # Input:
-- No of dataset in line 5 in the main function "Bayesian_main.R"
-- Length of time series for each dataset in line 9.
-- Read the concatenated data file in ".mat" format in line 8.
+- Number of data sets, which users need to specify on line 5 in `Bayesian_main.R`.
+- Length of the time series of each data set, which needs to be specified on line 9.
+- Read the concatenated data file in ".mat" format, which needds to be specified on line 8. [NM: How can users concatenate their data? Want to clarify for users.]
 
 # Output:
-- "h_J_value.mat" which contains the parameter values, where each row corresponds to a participant in the format [h_1,h_2,...,h_N,J_12,J_13,J_(N-1),N]
+- `h_J_value.mat`, which contains the estimated parameter values. Each row of this file corresponds to a participant in the format [h_1,h_2,...,h_N,J_12,J_13,J_(N-1),N].
 
