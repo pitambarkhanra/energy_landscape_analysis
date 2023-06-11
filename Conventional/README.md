@@ -36,5 +36,5 @@ i=1,2 denotes the participants and j=1,2 denotes the sessions.
 - "*_Interaction_strength": indicates the discrepancy measure described in subsection $2.7.1$ of the article Khanra *et al.* 2023.
 - "*_Hamming_dist":  indicates the discrepancy measure described in subsection $2.7.2$ of the article Khanra *et al.* 2023.
 - "*_Cosine_dist": indicates the discrepancy measure described in subsection $2.7.3$ of the article Khanra *et al.* 2023.
-- "*_nbld": indicates the discrepancy measure described in subsection $2.7.4$ of the article Khanra *et al.* 2023.
-Here "*" denotes "d1/d2".
+- "*_nbld": indicates the discrepancy measure described in subsection $2.7.4$ of the article Khanra *et al.* 2023. \n
+Here "\*" denotes "d1/d2".
