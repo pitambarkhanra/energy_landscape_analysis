@@ -17,24 +17,24 @@ Since it is difficult to creat a general code which can performs energy landscap
 
 To start with: Run **Energy_landscape_analysis.m** to calculate the four discrepancy measures. The key functions used in this code are as follows:
 
-- **main.m**: This function estimates the maximum entropy distribution using the maximum likelihood method. This is a modified version of the code developed by T. Ezaki. For more details about his code and related functions, please refer to [his Github repository](https://github.com/tkEzaki/energy-landscape-analysis).
+- `main.m`: This function estimates the maximum entropy distribution using the maximum likelihood method. This is a modified version of the code developed by Takahiro Ezaki. For more details about his code and related functions, please refer to [Takahiro's Github repository](https://github.com/tkEzaki/energy-landscape-analysis).
 
-- **branch_index.m**: This function calculates the index for the significant local minima calculated for an energy landscape with a given threshold (see subsection $2.7.2$ in Khanra *et al.* (2023)). Also it can calculate the sum of the branch length for all the significant local minima.
+- `branch_index.m`: This function calculates the index for the significant local minima calculated for an energy landscape with a given threshold [NM: As I wrote below, I do not understand what threshold you are meaning.] (see subsection $2.7.2$ in Khanra *et al.* (2023)). This function can [NM: "can" means what? It "does" calculate it always? Or it "can" calculate by setting an option or something like that?] also calculate the sum of the branch length for all the significant local minima.
 
-- **Hamming_Distance.m**: This function calculates the hamming distance between the activity pattern of two energy landscapes. "index1" denotes the index of significant local minima calculated for the first energy landscape and "index2" denotes the index of significant local minima calculated for the second energy landscape. (see subsection $2.7.2$ and Eq. $(23)$ for the theoretical procedure)
+- `Hamming_Distance.m`: This function calculates the Hamming distance between the activity patterns of two energy landscapes. "index1" denotes the index of significant local minima calculated for the first energy landscape and "index2" denotes the index of significant local minima calculated for the second energy landscape [NM: Do index1 and index2 have to come from two different energy landscapes?]. (see subsection $2.7.2$ and Eq. $(23)$).
 
-- **Cosine_distance.m**: This function calculates the cosine distance between the averaged activity pattern over the attractive basin corresponding to two energy landscapes. "BasinGraph1" indicates the basin graph for the first energy landscape and "BasinGraph2" indicates the basin graph for the second energy landscape. (see subsection $2.7.3$ in the above article)
+- `Cosine_distance.m`: This function calculates the cosine distance between the averaged activity pattern over the attractive basin corresponding to two energy landscapes. "BasinGraph1" indicates the basin graph [NM: We do not have a notion of "basin graph" anywhere in the paper and I do not understand this notion either.] for the first energy landscape and "BasinGraph2" indicates the basin graph for the second energy landscape. (see subsection $2.7.3$ in the above article).
 
 # Sample dataset:
 
-Example usage of **Energy_landscape_analysis.m** with dummy data sets named "SampleData_Binarized_Subject_i_Session_j.mat" which contains 7 ROIs and 1000 time points. 
-i=1,2 denotes the participants and j=1,2 denotes the sessions.
+Example usage of `Energy_landscape_analysis.m` with [NM: Vague. How to run this .m file? Without argument? What does "with dummy data sets" mean?] dummy data sets named `SampleData_Binarized_Subject_i_Session_j.mat` which contains 7 ROIs and 1000 time points. 
+i=1,2 denotes the participants, and j=1,2 denotes the sessions.
 
 # Input:
 - Number of ROIs in line 2 [NM: of which file?]
-- Participants list in line 3
-- Session list in line 4
-- Threshold to choose significant local minima in line 5
+- List of participants in line 3
+- List of sessions in line 4
+- Threshold to choose significant local minima in line 5 [NM: We do not have such a parameter in the paper. What does this "threshold" mean? I am totally confused.]
 
 # Output:
 [NM: Should output the inferred parameter values as well, right?]
@@ -43,4 +43,4 @@ i=1,2 denotes the participants and j=1,2 denotes the sessions.
 - "\*_Hamming_dist":  indicates the discrepancy measure described in subsection $2.7.2$ of the article Khanra *et al.* 2023.
 - "\*_Cosine_dist": indicates the discrepancy measure described in subsection $2.7.3$ of the article Khanra *et al.* 2023.
 - "\*_nbld": indicates the discrepancy measure described in subsection $2.7.4$ of the article Khanra *et al.* 2023.    
-Here "\*" denotes "d1/d2".
+Here "\*" denotes "d1/d2". [NM: This should be wrong because the first line then would be d1_d1 or d1_d2. What is going on?]
