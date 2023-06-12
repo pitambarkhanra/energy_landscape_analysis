@@ -4,7 +4,7 @@ When you use the code provided here, please cite the following paper:
 
 # What is this repository?
 
-This repository provides the MATLAB code of key functions to perform the energy landscape analysis on multi-variate time series data like fMRI data using the conventional gradient-ascent algorithm to maximize the likelihood.
+This repository provides the MATLAB code of key functions to perform the energy landscape analysis on multi-variate time series data like fMRI data using the conventional gradient-ascent algorithm to maximize the likelihood. [NM: vague given below regarding what "energy landscape analysis" means. For example calculation of dJ is in a sense not energy landscape analysis. Does this repository include the code to estimate the parameters hi and Jij? ND? permutation test? If not, specify what it does calculate. We are getting too late; reviewers looking at the repository incomplete is a VERY bad sign and gives them a reason to have a bad impression about the paper.]
 
 # Required software:
 
