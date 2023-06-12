@@ -1,3 +1,5 @@
+# Variational Bayes approximation method to estimate the pairwise maximum entropy model (i.e., Boltzmann machine, inverse Ising model)
+
 When you use the code provided here, please cite the following two papers:
 
 [S.-O. Jeong, J. Kang, C. Pae, J. Eo, S. M. Park, J. Son, H.-J. Park, Empirical bayes estimation of pairwise maximum entropy model for nonlinear brain state dynamics, NeuroImage 244, 118618 (2021)](https://doi.org/10.1016/j.neuroimage.2021.118618)
@@ -8,10 +10,13 @@ When you use the code provided here, please cite the following two papers:
 This code gives you the parameter value for the energy landscape analysis of fMRI data using variational Bayes approximation method.
 
 [NM: Show usage example in command line format. Also, format it very well, by mimicking other examples on github.]
-# Software and packages:
-- RStudio or any compatible software $+$ *R.matlab package and *tidyr package
 
-# How to use the coe?
+# Required software and packages:
+
+- RStudio or any compatible software
+- *R.matlab package and *tidyr package
+
+# How to use the code?
 
 Open RStudio and run the file `Bayesian_main.R`.
 
@@ -24,9 +29,9 @@ Contains [NM: What is the argument of this sentence? What file contains the exam
 
 # Input:
 - Number of data sets, which users need to specify on line 5 in `Bayesian_main.R`.
-- Length of the time series of each data set, which needs to be specified on line 9.
-- Read the concatenated data file in ".mat" format, which needds to be specified on line 8. [NM: How can users concatenate their data? Want to clarify for users.]
+- Length of the time series of each data set, which needs to be specified in line 9.
+- Read the concatenated data file in ".mat" format, which needds to be specified in line 8. [NM: How can users concatenate their data? Want to clarify for users.]
 
 # Output:
-- `h_J_value.mat`, which contains the estimated parameter values. Each row of this file corresponds to a participant in the format [h_1,h_2,...,h_N,J_12,J_13,J_(N-1),N].
+- `h_J_value.mat`, which contains the estimated parameter values. Each row of this file corresponds to a participant in the format [h_1,h_2,...,h_N,J_12,J_13,J_(N-1),N]. [NM: Can you typeset this properly. Underscore is a latex notion. I want it to look h and J in italic and 1, 12, 13 etc. in subscripts. In a related vein, does markdown have a functionality to use latex (math) commands? You can sort it out yourself.]
 
