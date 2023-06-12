@@ -21,7 +21,7 @@ Bayesian_main.R: main function to calculate the parameter value for the energy l
 
 [NM: Also be explicit in what the input is and what the output is.]
 # Sample dataset:
-Contains [NM: What is the argument of this sentence? What file contains the example usage?] an example usage of `Bayesian_main.R` with a dummy data set named `Sample_data.mat`. The file `Sample_data.mat' contains a synthetic concatenated data from 4 participants and 1000 time points for each participant.
+Contains [NM: What is the argument of this sentence? What file contains the example usage?] an example usage of `Bayesian_main.R` with a dummy data set named `Sample_data.mat`. The file `Sample_data.mat` contains a synthetic concatenated data from 4 participants and 1000 time points for each participant [NM: sounds like 4 data sets, but there is only one file, i.e., Sample_data.mat. Confusing].
 
 # Input:
 - Number of data sets, which users need to specify on line 5 in `Bayesian_main.R`.
