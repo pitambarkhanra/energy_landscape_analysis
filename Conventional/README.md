@@ -1,9 +1,10 @@
 When you use the code provided here, please cite the following paper:
 
-(P. Khanra, J. Nakuci, S. Muldoon, T. Watanabe, N. Masuda, Reliability of energy landscape analysis of resting-state functional MRI data, arXiv preprint arXiv:2305.19573)[https://arxiv.org/pdf/2305.19573.pdf]
+[P. Khanra, J. Nakuci, S. Muldoon, T. Watanabe, N. Masuda, Reliability of energy landscape analysis of resting-state functional MRI data, arXiv preprint arXiv:2305.19573](https://arxiv.org/abs/2305.19573)
 
 # What is this repository?
-This repository gives you the MATLAB code of key functions to perform the energy landscape analysis on multi-variate time series data like fMRI data using the pairwise maximum entropy model (i.e., Ising model) inferred by the conventional gradient-ascent algorithm.
+
+This repository provides the MATLAB code of key functions to perform the energy landscape analysis on multi-variate time series data like fMRI data using the conventional gradient-ascent algorithm to maximize the likelihood.
 
 # Required software:
 
@@ -36,8 +37,9 @@ i=1,2 denotes the participants and j=1,2 denotes the sessions.
 - Threshold to choose significant local minima in line 5
 
 # Output:
-- "d1_\*" indicates the discrepancy measures calculated for within participants and "d2_\*" indicates the same for between participants.
-- "\*_Interaction_strength": indicates the discrepancy measure described in subsection $2.7.1$ of the article Khanra *et al.* 2023.
+[NM: Should output the inferred parameter values as well, right?]
+- "d1_\*" indicates the discrepancy measures calculated for within-participant comparison, and "d2_\*" indicates the same for between-participant comparison. [NM: pairwise MEM Estimation algorithm and test-retest algorithm should be separeted completely. For example, it is entirely possible to estimate the pairwise MEM by the Bayesian method (not by likelihood maximization) and then turn to part of (?) this code to conduct test-retest reliability analysis.]
+- "\*_Interaction_strength": indicates the discrepancy measure xxx [NM: use the math symbols assigned to this variable here (please italicize as appropriate. Is there a way to use the math mode of latex with markdown?) rather than mentioning the section number] defined in Khanra et al. (2023) [NM: Similarly modify the next three ones as well.].
 - "\*_Hamming_dist":  indicates the discrepancy measure described in subsection $2.7.2$ of the article Khanra *et al.* 2023.
 - "\*_Cosine_dist": indicates the discrepancy measure described in subsection $2.7.3$ of the article Khanra *et al.* 2023.
 - "\*_nbld": indicates the discrepancy measure described in subsection $2.7.4$ of the article Khanra *et al.* 2023.    
