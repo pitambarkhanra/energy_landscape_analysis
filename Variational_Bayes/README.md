@@ -22,7 +22,7 @@ Open RStudio and run the file `Bayesian_main.R`.
 VEM.Boltzmann is the function to calculate the parameter values using the variational Bayes approximation method. This function is contained in `VEM.R`.
 
 # Sample data set
-The file `Sample_data.mat` contains the concatenation of the 7-dimensional time series data over 4 dummy sessions. Each dummy session's data consists of 1000 time points. In fact, the 4 dummy sessions' data are those in the Conventional folder.
+The file `Sample_data.mat` contains the concatenation of the 7-dimensional time series over 4 dummy data. Each dummy data consists of 1000 time points. In fact, the 4 dummy data are those in the Conventional folder.[PK: I have deleted the term "session". Because they are not only sessions or participants. What ever data users will have including sessions and participants, it should be concatenated for input]
 
 # Concatenation procedure
 Let $[a_i]_ {{t_{\max}\times N}}$ be a binarized (i.e., 0 or 1) time series data for session $i\in$\{ $1,\dots,D$ \}; where $t_{\max}$ denotes the number of time points, and $N$ is the number of ROIs. Then, the concatenated data will be stored in variable **binarizedData** $=[a_1;a_2; \ldots ;a_D]$ and save it in a .mat file to read it in `Bayesian_main.R`[NM: Correct it if I am wrong in having added "in `Bayesian_main.R`".][PK: I have corrected]. 
@@ -33,5 +33,5 @@ Let $[a_i]_ {{t_{\max}\times N}}$ be a binarized (i.e., 0 or 1) time series data
 - How to read the concatenated data file prepared in the .mat format, which needs to be specified in line 8.
 
 # Output
-- `h_J_value.mat` contains the estimated parameter values. Each row of this file corresponds to a session in the format $[h_1, \ldots, h_N,J_{12},J_{13},\ldots,J_{(N-1),N}]$.
+- `h_J_value.mat` contains the estimated parameter values. Each row of this file corresponds to a data in the format $[h_1, \ldots, h_N,J_{12},J_{13},\ldots,J_{(N-1),N}]$.
 
