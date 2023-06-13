@@ -29,7 +29,7 @@ To start with, run `Energy_landscape_analysis.m` to calculate the parameter valu
 
 # Sample dataset:
 
-We provide four binarized dummy data files named `SampleData_Binarized_Subject_i_Session_j.mat`, [NM: Subject is an unacceptable language nowadays. So, including the code, please replace Subject(s)/subject(s) by Participant(s)/participant(s).] each of which contains 7 ROIs and 1000 time points.  i $=1,2$ [NM: Fix the dollar mark throughout please.] [NM: As always, i and j must be italicized.] denotes the participants, and j $=1,2$ denotes the sessions.
+We provide four binarized dummy data files named `SampleData_Binarized_Subject_i_Session_j.mat`, [NM: Subject is an unacceptable language nowadays. So, including the code, please replace Subject(s)/subject(s) by Participant(s)/participant(s).] each of which contains 7 ROIs and 1000 time points.  $i=1,2$ [NM: Fix the dollar mark throughout please.] [NM: As always, i and j must be italicized.] denotes the participants, and $j=1,2$ denotes the sessions.
 If you run `Energy_landscape_analysis.m`, it reads these .mat files and run the analysis. If you want to run the analysis with different data sets, you only need to replace the data file name in line 19 and 56 in `Energy_landscape_analysis.m`.
 
 # Input:
