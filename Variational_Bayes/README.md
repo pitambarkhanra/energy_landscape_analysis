@@ -1,13 +1,12 @@
 # Variational Bayes approximation method to estimate the pairwise maximum entropy model (i.e., Boltzmann machine, inverse Ising model)
 
+This code calculates the parameter values for the Ising model from multivariate time series data using variational Bayes approximation method.
+
 When you use the code provided here, please cite the following two papers:
 
 [S.-O. Jeong, J. Kang, C. Pae, J. Eo, S. M. Park, J. Son, H.-J. Park, Empirical bayes estimation of pairwise maximum entropy model for nonlinear brain state dynamics, NeuroImage 244, 118618 (2021)](https://doi.org/10.1016/j.neuroimage.2021.118618)
 
 [P. Khanra, J. Nakuci, S. Muldoon, T. Watanabe, N. Masuda, Reliability of energy landscape analysis of resting-state functional MRI data, arXiv preprint arXiv:2305.19573](https://arxiv.org/pdf/2305.19573.pdf)
-
-# What is this repository?
-This code gives you the parameter value for the energy landscape analysis of fMRI data using variational Bayes approximation method.
 
 # Required software and packages
 
