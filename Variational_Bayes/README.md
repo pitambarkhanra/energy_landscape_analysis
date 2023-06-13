@@ -33,8 +33,8 @@ Let, $(a_i)_{m \times n}$ is a binarized (0/1) dataset for participant $i$, wher
 # Input:
 - Number of data sets, which users need to specify on line 5 in `Bayesian_main.R`.
 - Length of the time series of each data set, which needs to be specified in line 9.
-- Read the concatenated data file in ".mat" format, which needds to be specified in line 8. [NM: How can users concatenate their data? Want to clarify for users.]
+- Read the concatenated data file in ".mat" format, which needds to be specified in line 8. [NM: How can users concatenate their data? Want to clarify for users.][PK: I have added one more section for this concatenation]
 
 # Output:
-- `h_J_value.mat`, which contains the estimated parameter values. Each row of this file corresponds to a participant in the format [h_1,h_2,...,h_N,J_12,J_13,J_(N-1),N]. [NM: Can you typeset this properly. Underscore is a latex notion. I want it to look h and J in italic and 1, 12, 13 etc. in subscripts. In a related vein, does markdown have a functionality to use latex (math) commands? You can sort it out yourself.]
+- `h_J_value.mat`, which contains the estimated parameter values. Each row of this file corresponds to a participant in the format $[h_1,h_2,...,h_N,J_12,J_13,\dots,J_(N-1),N]$. [NM: Can you typeset this properly. Underscore is a latex notion. I want it to look h and J in italic and 1, 12, 13 etc. in subscripts. In a related vein, does markdown have a functionality to use latex (math) commands? You can sort it out yourself.]
 
