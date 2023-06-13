@@ -38,11 +38,10 @@ i=1,2 denotes the participants, and j=1,2 denotes the sessions.
 - Change the binarized data file name in line 19 and 56.
 
 # Output:
-[NM: Should output the inferred parameter values as well, right?][PK: Yes, you are right. I have included.]
-- "h_L_i_j.mat" and "J_L_i_j.mat" gives the fitting parameter and pairwise interaction parameters values respectively for the "i-th" participant and "j-th" session.
+- "h_L_i_j.mat" contains the estimated $[h_1, \ldots, h_N]$ values for the $j$th session from the $i$th participant. [NM: Confusing because the conventional method, which this folder is about, only estimates one energy landscape for the set of sessions, right? The Bayesian does estimate hi and Jij for each participant and each session, but Bayesian is the other folder.]
+- "J_L_i_j.mat" contains the estimated $[J_{12}, J_{13}, \ldots, J_{(N-1),N}]$ values for the $j$th session from the $i$th participant.
 - "d1_\*" indicates the discrepancy measures calculated for within-participant comparison, and "d2_\*" indicates the same for between-participant comparison. [NM: pairwise MEM Estimation algorithm and test-retest algorithm should be separeted completely. For example, it is entirely possible to estimate the pairwise MEM by the Bayesian method (not by likelihood maximization) and then turn to part of (?) this code to conduct test-retest reliability analysis.][PK: This code will only calculate the parameter value and all the four discrepancy measures for the original data only. For the permutation test just to do the permutation with the data and run the same analysis with these codes. Should we provide a separate code for this also?]. Here "\*" denotes the four discrepancy measures given below:
 - "Interaction_strength": indicates the discrepancy measure $d_J$ [NM: use the math symbols assigned to this variable here (please italicize as appropriate. Is there a way to use the math mode of latex with markdown?) rather than mentioning the section number][PK: Done. For the mathmode I will check it later] defined in Khanra et al. (2023) [NM: Similarly modify the next three ones as well.].
 - "Hamming_dist":  indicates the discrepancy measure $d_H$ defined in Khanra *et al.* 2023.
 - "Cosine_dist": indicates the discrepancy measure $d_\rm{basin}$ defined in Khanra *et al.* 2023.
-- "nbld": indicates the discrepancy measure $d_L$ defined in Khanra *et al.* 2023.    
-Here "\*" denotes "d1/d2". [NM: This should be wrong because the first line then would be d1_d1 or d1_d2. What is going on?][PK: This line was not correct. it should be deleted.]
+- "nbld": indicates the discrepancy measure $d_L$ defined in Khanra *et al.* 2023.
