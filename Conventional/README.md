@@ -31,17 +31,22 @@ We provide four binarized dummy data files named `SampleData_Binarized_Subject_i
 If you run `Energy_landscape_analysis.m`, it reads these .mat files and run the analysis. If you want to run the analysis with different data sets, you only need to replace the data file name in line 19 and 56 in `Energy_landscape_analysis.m`. [NM: Is this what you mean?][PK: Yes, right.]
 
 # Input:
-- Number of ROIs, set in line 2 in `Energy_landscape_analysis.m`. [NM: of which file?]
+- Number of ROIs, set in line 2 in `Energy_landscape_analysis.m`.
 - List of participants, set in line 3 of the same file.
 - List of sessions, set in line 4 of the same file.
 - Threshold (i.e., $\mu' + 2\sigma'$ in subsection $2.7.2$ in Khanra *et al.* (2023)) to choose significant local minima, set in line 5 of the same file.
 - Name of the binarized data file, set in lines 19 and 56.
 
 # Output:
-- "h_L_i_j.mat" contains the estimated $[h_1, \ldots, h_N]$ values for the $j$ th [NM: Can you fix this dollar mark? I don't know when it is automatically converted to latex math and when it is not. Also in other places.] session from the $i$ th participant. [NM: Confusing because the conventional method, which this folder is about, only estimates one energy landscape for the set of sessions, right? The Bayesian does estimate hi and Jij for each participant and each session, but Bayesian is the other folder.]
-- "J_L_i_j.mat" contains the estimated $[J_{12}, J_{13}, \ldots, J_{(N-1),N}]$ values for the $j$th session from the $i$th participant.
-- "d1_\*" [NM: Is this the output file name? If so, please replace "indicates" by "contains" and same for other instances below.] indicates the discrepancy measures calculated for within-participant comparison, and "d2_\*" indicates the same for between-participant comparison. [NM: pairwise MEM Estimation algorithm and test-retest algorithm should be separeted completely. For example, it is entirely possible to estimate the pairwise MEM by the Bayesian method (not by likelihood maximization) and then turn to part of (?) this code to conduct test-retest reliability analysis.][PK: This code will only calculate the parameter value and all the four discrepancy measures for the original data only. For the permutation test just to do the permutation with the data and run the same analysis with these codes. Should we provide a separate code for this also?] [NM: Eventually yes, but let's prioritize all other parts for now.]. Here "\*" denotes the four discrepancy measures defined in Khanra * et al.* 2023 as follows:
+- "h_L_i_j.mat" contains the estimated $[h_1, \ldots, h_N]$ values for the j-th [NM: Can you fix this dollar mark? I don't know when it is automatically converted to latex math and when it is not. Also in other places.][PK: I have changed the other places, but here it should not be in dollar sign, otherwise it will not match with the file name.] session from the i-th participant. [NM: Confusing because the conventional method, which this folder is about, only estimates one energy landscape for the set of sessions, right? The Bayesian does estimate hi and Jij for each participant and each session, but Bayesian is the other folder.]
+- "J_L_i_j.mat" contains the estimated $[J_{12}, J_{13}, \ldots, J_{(N-1),N}]$ values for the j-th session from the i-th participant.
+- "d1_\*" [NM: Is this the output file name? If so, please replace "indicates" by "contains" and same for other instances below.] contains the discrepancy measures calculated for within-participant comparison, and "d2_\*" contains the same for between-participant comparison. [NM: pairwise MEM Estimation algorithm and test-retest algorithm should be separeted completely. For example, it is entirely possible to estimate the pairwise MEM by the Bayesian method (not by likelihood maximization) and then turn to part of (?) this code to conduct test-retest reliability analysis.][PK: This code will only calculate the parameter value and all the four discrepancy measures for the original data only. For the permutation test just to do the permutation with the data and run the same analysis with these codes. Should we provide a separate code for this also?] [NM: Eventually yes, but let's prioritize all other parts for now.]. Here "\*" denotes the four discrepancy measures defined in Khanra * et al.* 2023 as follows:
     - "Interaction_strength": indicates the discrepancy measure $d_J$ [PK: Done. For the mathmode I will check it later].
     - "Hamming_dist":  indicates the discrepancy measure $d_H$.
     - "Cosine_dist": indicates the discrepancy measure $d_\rm{basin}$.
     - "nbld": indicates the discrepancy measure $d_L$.
+- "Discrepancy.mat" contains the four ND value as follows:
+    - "ND_Interaction_strength": contains the ND value for the discrepancy measure $d_J$.
+    - "ND_Hamming_dist"; contains the ND value for the discrepancy measure $d_H$.
+    - "ND_Cosine_dist": contains the ND value for the discrepancy measure $d_\rm{basin}$.
+    - "ND_nbld": contains the ND value for the discrepancy measure $d_L$.
