@@ -1,6 +1,6 @@
-# Energy landscape analysis with the conventional likelihood maximization and variational Bayes approximation methods [NM: Plus test-retest? I am confused. See my comements on readme in Conventional folder.][PK: I have replied in Conventional folder.]
+# Energy landscape analysis with the conventional likelihood maximization and variational Bayes approximation methods
 
-Here we provide codes and example usages for energy landscape analysis of multivariate time series data such as fMRI data.
+We provide codes and example usages for energy landscape analysis of multivariate time series data such as fMRI data.
 
 There are the following two folders in this repository.
 
