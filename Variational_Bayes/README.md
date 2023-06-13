@@ -9,7 +9,7 @@ When you use the code provided here, please cite the following two papers:
 # What is this repository?
 This code gives you the parameter value for the energy landscape analysis of fMRI data using variational Bayes approximation method.
 
-[NM: Show usage example in command line format. Also, format it very well, by mimicking other examples on github.]
+[NM: Show usage example in command line format. Also, format it very well, by mimicking other examples on github.][PK: I have changed it in sample dataset.]
 
 # Required software and packages:
 
