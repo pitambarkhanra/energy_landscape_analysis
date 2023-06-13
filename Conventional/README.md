@@ -4,12 +4,11 @@ When you use the code provided here, please cite the following paper:
 
 # What is this repository?
 
-This repository provides the MATLAB code of key functions to perform the energy landscape analysis on multi-variate time series data like fMRI data using the conventional gradient-ascent algorithm to maximize the likelihood. [NM: vague given below regarding what "energy landscape analysis" means. For example calculation of dJ is in a sense not energy landscape analysis. Does this repository include the code to estimate the parameters hi and Jij? ND? permutation test? If not, specify what it does calculate. We are getting too late; reviewers looking at the repository incomplete is a VERY bad sign and gives them a reason to have a bad impression about the paper.]
+This repository provides the MATLAB code of key functions to perform the energy landscape analysis on multi-variate time series data like fMRI data using the conventional gradient-ascent algorithm to maximize the likelihood estimation and to estimate the parameter values. Also this repository will estimate the four discrepancy measures proposed in Khanra *et al.* (2023). [NM: vague given below regarding what "energy landscape analysis" means. For example calculation of dJ is in a sense not energy landscape analysis. Does this repository include the code to estimate the parameters hi and Jij? ND? permutation test? If not, specify what it does calculate. We are getting too late; reviewers looking at the repository incomplete is a VERY bad sign and gives them a reason to have a bad impression about the paper.][PK: It will not calculate the ND and permutation test results. These are the basic codes to calculate energy landscape analysis, estimate the parameter values and estimate the discrepancy measures. In this code we are calculating d1 and d2. Someone has to take the ratio only to calculate ND.]
 
 # Required software:
 
-- MATLAB2020 [NM: They always have versions 2020a and 2020b, for example. There is no version 'MATLAB2020'? Be precise please, as the version is a unique name.] or a later version
-- MATLAB Statistics and Machine Learning Toolbox.
+- MATLAB2020 [NM: They always have versions 2020a and 2020b, for example. There is no version 'MATLAB2020'? Be precise please, as the version is a unique name.][PK: What I have written here is a standard way to refer a MATLAB version. We can't refer specifically "a" or "b". Because MATLAB declairs "a" is a more stable version than "b". In other way you can say "b" is the pre-release version of "a". I have learned this things from Takahiro's repository and also other's page.] or later versions $+$ MATLAB Statistics and Machine Learning Toolbox [PK: This is a package in MATLAB. This is not a software, so this should not be in separate item.].
 
 # How to use the code?
 
