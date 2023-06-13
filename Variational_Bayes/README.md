@@ -25,7 +25,7 @@ VEM.Boltzmann is the function to calculate the parameter values using the variat
 The file `Sample_data.mat` contains the concatenation of the 7-dimensional time series data over 4 dummy participants. Each dummy participant's data consists of 1000 time points. In fact, the 4 dummy participants' data are those in the Conventional folder.
 
 # Concatenation procedure
-Let $[a_i]_ {{t_{\max}\times N}}$ be a binarized (i.e., 0 or 1) time series data for participant $i\in$\{ $1,\dots,D$ \}; where $t_{\max}$ denotes the number of time points, and $N$ is the number of ROIs. Then, the concatenated data will be stored in variable binarizedData in `Bayesian_main.R`[NM: Correct it if I am wrong in having added "in `Bayesian_main.R`".] $=[a_1;a_2; \ldots ;a_D]$ (binarizedData is the variable name in the code used for the concatenated data). [NM: This should be wrong, as $i$ is not the number of participants but it is an index for the participant.][PK: Corrected]
+Let $[a_i]_ {{t_{\max}\times N}}$ be a binarized (i.e., 0 or 1) time series data for participant $i\in$\{ $1,\dots,D$ \}; where $t_{\max}$ denotes the number of time points, and $N$ is the number of ROIs. Then, the concatenated data will be stored in variable binarizedData $=[a_1;a_2; \ldots ;a_D]$ in `Bayesian_main.R`[NM: Correct it if I am wrong in having added "in `Bayesian_main.R`".]. 
 
 # Input
 - Number of data sets, which a user needs to specify in line 5 in `Bayesian_main.R`.
