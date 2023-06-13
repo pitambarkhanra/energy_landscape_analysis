@@ -22,10 +22,10 @@ Open RStudio and run the file `Bayesian_main.R`.
 VEM.Boltzmann is the function to calculate the parameter values using the variational Bayes approximation method. This function is contained in `VEM.R`.
 
 # Sample data set
-The file `Sample_data.mat` contains the concatenation of the 8-dimensional [NM: Correct if I am wrong in writing 8.] time series data over 4 dummy participants. Each dummy participant's data consists of 1000 time points. In fact, the 4 dummy participants' data are those in the Conventional folder.
+The file `Sample_data.mat` contains the concatenation of the 7-dimensional time series data over 4 dummy participants. Each dummy participant's data consists of 1000 time points. In fact, the 4 dummy participants' data are those in the Conventional folder.
 
 # Concatenation procedure
-Let $[a_i]_ {{t_{\max}\times N}}$ be a binarized (i.e., 0 or 1) time series data for participant $i\in$\{ $1,\dots,D$ \}; where $t_{\max}$ denotes the number of time points, and $N$ is the number of ROIs. Then, the concatenated data will be in the form binarizedData [NM: What does this binarizedData mean? Is this the name of the variable you use in the file? If so, it is fine but please say that.][PK: yes, this is the variable name. I have corrected the writing] $=[a_1;a_2; \ldots ;a_D]$ (binarizedData is the variable name in the code used for the concatenated data). [NM: This should be wrong, as $i$ is not the number of participants but it is an index for the participant.][PK: Corrected]
+Let $[a_i]_ {{t_{\max}\times N}}$ be a binarized (i.e., 0 or 1) time series data for participant $i\in$\{ $1,\dots,D$ \}; where $t_{\max}$ denotes the number of time points, and $N$ is the number of ROIs. Then, the concatenated data will be stored in variable binarizedData in `Bayesian_main.R`[NM: Correct it if I am wrong in having added "in `Bayesian_main.R`".] $=[a_1;a_2; \ldots ;a_D]$ (binarizedData is the variable name in the code used for the concatenated data). [NM: This should be wrong, as $i$ is not the number of participants but it is an index for the participant.][PK: Corrected]
 
 # Input
 - Number of data sets, which a user needs to specify in line 5 in `Bayesian_main.R`.
