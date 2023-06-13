@@ -81,3 +81,18 @@ d2_Interaction_strength=[]; d2_Hamming_dist=[]; d2_Cosine_dist=[]; d2_nbld=[];
             d2_Cosine_dist=[d2_Cosine_dist, Cosine_distance(nodeNum,BasinGraph1,BasinGraph2,index1,index2)];
             d2_nbld=[d2_nbld, abs(tbl1-tbl2)/max(tbl1,tbl2)];    %Normalized branch length difference
     end
+    d1_Interaction_strength=mean(d1_Interaction_strength);
+    d1_Hamming_dist=mean(d1_Hamming_dist);
+    d1_Cosine_dist=mean(d1_Cosine_dist);
+    d1_nbld=mean(d1_nbld);
+
+    d2_Interaction_strength=mean(d2_Interaction_strength);
+    d2_Hamming_dist=mean(d2_Hamming_dist);
+    d2_Cosine_dist=mean(d2_Cosine_dist);
+    d2_nbld=mean(d2_nbld);
+
+    ND_Interaction_strength=d2_Interaction_strength/d1_Interaction_strength;
+    ND_Hamming_dist=d2_Hamming_dist/d1_Hamming_dist;
+    ND_Cosine_dist=d2_Cosine_dist/d1_Cosine_dist;
+    ND_nbld=d2_nbld/d1_nbld;
+    save Discrepancy.mat ND_Interaction_strength ND_Hamming_dist ND_Cosine_dist ND_nbld
