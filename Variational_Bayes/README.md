@@ -9,8 +9,6 @@ When you use the code provided here, please cite the following two papers:
 # What is this repository?
 This code gives you the parameter value for the energy landscape analysis of fMRI data using variational Bayes approximation method.
 
-[NM: Show usage example in command line format. Also, format it very well, by mimicking other examples on github.][PK: I have changed it in sample dataset.]
-
 # Required software and packages:
 
 - RStudio or any compatible software
@@ -25,7 +23,7 @@ Open RStudio and run the file `Bayesian_main.R`.
 VEM.Boltzmann is the function to calculate the parameter values using the variational Bayes approximation method. This function is contained in `VEM.R`.
 
 # Sample dataset:
-[NM: What is the argument of this sentence? What file contains the example usage?] Example usage of `Bayesian_main.R` with a dummy data set named `Sample_data.mat`. The file `Sample_data.mat` contains a synthetic concatenated data from 4 participants and 1000 time points for each participant [NM: sounds like 4 data sets, but there is only one file, i.e., Sample_data.mat. Confusing][PK: It's the concatenated dataset for four participants, I have mentioned.].
+The file `Sample_data.mat` contains a synthetic concatenated data from 4 participants and 1000 time points for each participant [NM: The Conventional folder contains 4 data files. Are they the 4 original data sets from which this concatenated data set is computed? Confusing.].
 
 # Concatenation procedure:
 Let $(a_i)_{m \times n}$ [NM: This is an invalid notation. Is each $a_i$ a $m \times n$ matrix? Also, better use the same notation as in the paper, that is, $N$ for the number of ROIs and $t_{\max}$ (was it?) for the number of time points, including the code. Those small details will annoy and confuse users/readers.] be a binarized (i.e., 0 or 1) time series data for participant $i$, where $m$ is the number of time points, and $n$ is the number of ROIs. Then, the concatenated data will be in the form binarizedData [NM: What does this binarizedData mean? Is this the name of the variable you use in the file? If so, it is fine but please say that.] $=[a_1;a_2; \ldots ;a_i]$. [NM: This should be wrong, as $i$ is not the number of participants but it is an index for the participant.]
