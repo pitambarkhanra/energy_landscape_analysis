@@ -25,7 +25,10 @@ Open RStudio and run the file `Bayesian_main.R`.
 VEM.Boltzmann is the function to calculate the parameter values using the variational Bayes approximation method. This function is contained in `VEM.R`.
 
 # Sample dataset:
-Contains [NM: What is the argument of this sentence? What file contains the example usage?] an example usage of `Bayesian_main.R` with a dummy data set named `Sample_data.mat`. The file `Sample_data.mat` contains a synthetic concatenated data from 4 participants and 1000 time points for each participant [NM: sounds like 4 data sets, but there is only one file, i.e., Sample_data.mat. Confusing].
+[NM: What is the argument of this sentence? What file contains the example usage?] Example usage of `Bayesian_main.R` with a dummy data set named `Sample_data.mat`. The file `Sample_data.mat` contains a synthetic concatenated data from 4 participants and 1000 time points for each participant [NM: sounds like 4 data sets, but there is only one file, i.e., Sample_data.mat. Confusing][PK: It's the concatenated dataset for four participants, I have mentioned.].
+
+# Concatenation procedure:
+Let, $(a_i)_{m \times n}$ is a binarized (0/1) dataset for participant $i$, where $m$ denotes the no. of time points and $n$ denotes the no. of ROIs. Then, the concatenated dataset will be in the form binarizedData$=[a_1;a_2;\dots ;a_i]$.
 
 # Input:
 - Number of data sets, which users need to specify on line 5 in `Bayesian_main.R`.
