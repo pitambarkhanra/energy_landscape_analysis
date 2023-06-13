@@ -28,12 +28,12 @@ VEM.Boltzmann is the function to calculate the parameter values using the variat
 [NM: What is the argument of this sentence? What file contains the example usage?] Example usage of `Bayesian_main.R` with a dummy data set named `Sample_data.mat`. The file `Sample_data.mat` contains a synthetic concatenated data from 4 participants and 1000 time points for each participant [NM: sounds like 4 data sets, but there is only one file, i.e., Sample_data.mat. Confusing][PK: It's the concatenated dataset for four participants, I have mentioned.].
 
 # Concatenation procedure:
-Let, $(a_i)_{m \times n}$ is a binarized (0/1) dataset for participant $i$, where $m$ denotes the no. of time points and $n$ denotes the no. of ROIs. Then, the concatenated dataset will be in the form binarizedData $=[a_1;a_2;\dots ;a_i]$.
+Let $(a_i)_{m \times n}$ [NM: This is an invalid notation. Is each $a_i$ a $m \times n$ matrix? Also, better use the same notation as in the paper, that is, $N$ for the number of ROIs and $t_{\max}$ (was it?) for the number of time points, including the code. Those small details will annoy and confuse users/readers.] be a binarized (i.e., 0 or 1) time series data for participant $i$, where $m$ is the number of time points, and $n$ is the number of ROIs. Then, the concatenated data will be in the form binarizedData [NM: What does this binarizedData mean? Is this the name of the variable you use in the file? If so, it is fine but please say that.] $=[a_1;a_2; \ldots ;a_i]$. [NM: This should be wrong, as $i$ is not the number of participants but it is an index for the participant.]
 
 # Input:
-- Number of data sets, which users need to specify on line 5 in `Bayesian_main.R`.
+- Number of data sets, which a user needs to specify in line 5 in `Bayesian_main.R`.
 - Length of the time series of each data set, which needs to be specified in line 9.
-- Read the concatenated data file in ".mat" format, which needds to be specified in line 8. [NM: How can users concatenate their data? Want to clarify for users.][PK: I have added one more section for this concatenation]
+- How to read the concatenated data file prepared in the .mat format, which needs to be specified in line 8.
 
 # Output:
 - `h_J_value.mat` contains the estimated parameter values. Each row of this file corresponds to a participant in the format $[h_1, \ldots, h_N,J_{12},J_{13},\ldots,J_{(N-1),N}]$.
