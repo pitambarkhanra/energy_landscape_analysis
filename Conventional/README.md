@@ -6,7 +6,7 @@ When you use the code provided here, please cite the following paper:
 
 # What is this repository?
 
-The code in this folder provides the MATLAB code of key functions to perform the energy landscape analysis on multi-variate time series data like fMRI data using the conventional gradient-ascent algorithm to maximize the likelihood estimation and to estimate the parameter values. Also this repository will estimate the four discrepancy measures proposed in Khanra *et al.* (2023).[PK: It will not calculate the ND and permutation test results. These are the basic codes to calculate energy landscape analysis, estimate the parameter values and estimate the discrepancy measures. In this code we are calculating d1 and d2. Users need to take the ratio only to calculate ND.] [NM: But users do not want to take the ratio themselves. Don't make them work. We need to work.][PK: I have updated the code and also the output section here]
+The code in this folder provides the MATLAB code of key functions to perform the energy landscape analysis on multi-variate time series data like fMRI data using the conventional gradient-ascent algorithm to maximize the likelihood estimation and to estimate the parameter values. The code in this folder estimates the four discrepancy measures proposed in Khanra *et al.* (2023).[PK: It will not calculate the ND and permutation test results. These are the basic codes to calculate energy landscape analysis, estimate the parameter values and estimate the discrepancy measures. In this code we are calculating d1 and d2. Users need to take the ratio only to calculate ND.] [NM: But users do not want to take the ratio themselves. Don't make them work. We need to work.][PK: I have updated the code and also the output section here]
 
 # Required software and packages:
 
@@ -15,11 +15,11 @@ The code in this folder provides the MATLAB code of key functions to perform the
 
 # How to use the code?
 
-Because it is difficult to creat a general code which can performs energy landscape analysis for any arbitrary data, we provide the MATLAB codes and key functions for example analysis and to calculate the parameter values with the four discrepancy measures proposed in the above mentioned article.
+Because it is difficult to creat a general code which can perform energy landscape analysis for any arbitrary data, we provide the MATLAB codes and key functions for example analysis and to calculate the parameter values with the four discrepancy measures proposed in the above mentioned article.
 
 To start with, run `Energy_landscape_analysis.m` to calculate the parameter values and the four discrepancy measures. The key functions used in this code are as follows:
 
-- `main.m`: This function estimates the maximum entropy distribution using the maximum likelihood method. This is a modified version of the code developed by Takahiro Ezaki. For more details about his code and related functions, please refer to [Takahiro's Github repository](https://github.com/tkEzaki/energy-landscape-analysis).
+- `main.m`: This function estimates the parameter of the Ising model using the maximum likelihood method. This is a modification of the code developed by Takahiro Ezaki. For more details about his code and related functions, please refer to [Takahiro's Github repository](https://github.com/tkEzaki/energy-landscape-analysis).
 
 - `branch_index.m`: This function calculates the index [NM: What does "index" mean?] for the significant local minima calculated for an energy landscape with a given threshold (i.e., $\mu'+2\sigma'$ to discard the insignificant local minima; see subsection $2.7.2$ in the aforementioned paper for details about the threshold). This function also calculates the sum of the branch length ("tbl") for all the significant local minima.
 
