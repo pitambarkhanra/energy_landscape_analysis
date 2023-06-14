@@ -22,10 +22,10 @@ Open RStudio and run the file `Bayesian_main.R`.
 VEM.Boltzmann is the function to calculate the parameter values using the variational Bayes approximation method. This function is contained in `VEM.R`.
 
 # Sample data set
-The file `Sample_data.mat` contains the concatenation of the 7-dimensional time series over 4 dummy data sets. Each dummy data set consists of 1000 time points. In fact, the 4 dummy data sets are those in [the Conventional folder](https://github.com/pitambarkhanra/energy_landscape_analysis/tree/main/Conventional).
+The file `Sample_data.mat` contains the concatenation of the 7-dimensional time series over 4 dummy data files. Each dummy data file consists of 1000 time points. In fact, the 4 dummy data files are those in [the Conventional folder](https://github.com/pitambarkhanra/energy_landscape_analysis/tree/main/Conventional).
 
 # Concatenation procedure
-Let $[a_i]_ {{t_{\max}\times N}}$ be a binarized (i.e., 0 or 1) time series data for session $i\in$\{ $1,\dots,D$ \}; where $t_{\max}$ denotes the number of time points, and $N$ is the number of ROIs. Then, the concatenated data will be stored in variable **binarizedData** $=[a_1;a_2; \ldots ;a_D]$ and save it in a .mat file to read it in `Bayesian_main.R`[NM: Correct it if I am wrong in having added "in `Bayesian_main.R`".][PK: I have corrected]. 
+Let $[a_i]_ {{t_{\max}\times N}}$ be a binarized (i.e., 0 or 1) time series data file for session $i\in$\{ $1,\dots,D$ \}; where $t_{\max}$ denotes the number of time points, and $N$ is the number of ROIs. Then, the concatenated data will be stored in variable **binarizedData** $=[a_1;a_2; \ldots ;a_D]$ and save it in a .mat file to read it in `Bayesian_main.R`.
 
 # Input
 - Number of data sets, which a user needs to specify in line 5 in `Bayesian_main.R`.
