@@ -25,7 +25,7 @@ VEM.Boltzmann is the function to calculate the parameter values using the variat
 The file `Sample_data.mat` contains the concatenation of the 7-dimensional time series over 4 dummy data files. Each dummy data file consists of 1000 time points. In fact, the 4 dummy data files are those in [the Conventional folder](https://github.com/pitambarkhanra/energy_landscape_analysis/tree/main/Conventional).
 
 # Concatenation procedure
-Let $[a_i]_ {{t_{\max}\times N}}$ be a binarized (i.e., 0 or 1) time series data file for session $i\in$\{ $1,\dots,D$ \}; where $t_{\max}$ denotes the number of time points, and $N$ is the number of ROIs. Then, the concatenated data will be stored in variable **binarizedData** $=[a_1;a_2; \ldots ;a_D]$ and save it in a .mat file to read it in `Bayesian_main.R`.
+Let $[a_i]_ {{t_{\max}\times N}}$ be a binarized (i.e., 0 or 1) time series data file for session $i\in$\{ $1,\dots,D$ \}; where $t_{\max}$ denotes the number of time points, and $N$ is the number of ROIs. Then, the concatenated data will be stored in variable **binarizedData** $=[a_1;a_2; \ldots ;a_D]$ and save it in a .mat file to read it in `Bayesian_main.R`. [NM: Now I am finally understanding (probably) the working. Please do either of the following: (i) Provide a separate code that does this concatenaion job for the users. The input should be the input file names (and the number of data sets?). The output should be the concatenated file as described in this section. Don't impose manual work to do this concatenation on users. (ii) Rewrite the Bayesian_main.R so that it accepts many files before the concatenation and Bayesian_main.R does concatenation within it.]
 
 # Input
 - Number of data sets, which a user needs to specify in line 5 in `Bayesian_main.R`.
