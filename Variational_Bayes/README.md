@@ -30,7 +30,7 @@ Let $[a_i]_ {{t_{\max}\times N}}$ be a binarized (i.e., 0 or 1) time series data
 # Input
 - Number of data sets, which a user needs to specify in line 5 in `Bayesian_main.R`.
 - Length of the time series of each data set, which needs to be specified in line 9.
-- How to read the concatenated data file prepared in the .mat format, which needs to be specified in line 8.
+- Name of the concatenated data file prepared in the .mat format, which needs to be specified in line 8.
 
 # Output
 - `h_J_value.mat` contains the estimated parameter values. Each row of this file corresponds to a data in the format $[h_1, \ldots, h_N,J_{12},J_{13},\ldots,J_{(N-1),N}]$.
