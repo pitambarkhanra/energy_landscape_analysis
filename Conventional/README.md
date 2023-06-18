@@ -41,7 +41,7 @@ If you run `Energy_landscape_analysis.m`, it reads these .mat files and run the 
 
 # Output:
 - "h_L_i_j.mat" contains the estimated $[h_1, \ldots, h_N]$ values for the $j$th session from the $i$ th participant. For example, if we have 2 participants and 2 sessions and feed four input files to run `Energy_landscape_analysis.m`, then we will obtain "h_L_1_1.mat", "h_L_1_2.mat", "h_L_2_1.mat", and "h_L_2_2,mat". More often than not, we want to estimate energy landscapes for concatenated data (i.e., concatenated across different sessions and/or participants). In this case, if you want to estimate one energy landscape for the data concatenated over multiple participants (one session per participant), you simply need to pretend $i=j=1$ and feed the concatenated data to `Energy_landscape_analysis.m`.
-- "J_L_i_j.mat" contains the estimated $[J_{11}, J_{12}, \ldots, J_{1,N};J_{21}, J_{22}, \ldots, J_{2,N}; \ldots ;J_{N,1},J_{N,2}, \ldots , J_{N,N}]$ values for the $j$th session from the $i$th participant.
+- "J_L_i_j.mat" contains the estimated $[J_{11}, J_{12}, \ldots, J_{1,N};J_{21}, J_{22}, \ldots, J_{2,N}; \ldots ;J_{N,1},J_{N,2}, \ldots , J_{N,N}]$ values for the $j$ th session from the $i$ th participant.
 - "d1_\*" contains the discrepancy measures calculated for within-participant comparison, and "d2_\*" contains the same for between-participant comparison. Here "\*" denotes the four discrepancy measures defined in Khanra * et al.* 2023 as follows:
     - "Interaction_strength": indicates the discrepancy measure $d_J$.
     - "Hamming_dist":  indicates the discrepancy measure $d_H$.
