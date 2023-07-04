@@ -108,5 +108,5 @@ end
         NDper_Cosine_dist=[NDper_Cosine_dist;d2_Cosine_dist./d1_Cosine_dist];
         NDper_nbld=[NDper_nbld;d2_nbld./d1_nbld];
 end
-p_values=[find(ND_Interaction_strength>=NDper_Interaction_strength)/NOP,find(ND_Hamming_dist>=NDper_Hamming_dist)/NOP,find(ND_Cosine_dist>=NDper_Cosine_dist)/NOP,find(ND_nbld>=NDper_nbld)/NOP];
+p_values=[find(NDper_Interaction_strength>=ND_Interaction_strength)/NOP,find(NDper_Hamming_dist>=ND_Hamming_dist)/NOP,find(NDper_Cosine_dist>=ND_Cosine_dist)/NOP,find(NDper_nbld>=ND_nbld)/NOP];
 save permutation_results.mat NDper_Interaction_strength NDper_Hamming_dist NDper_Cosine_dist NDper_nbld p_values
