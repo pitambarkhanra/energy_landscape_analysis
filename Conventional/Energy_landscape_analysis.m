@@ -95,4 +95,4 @@ d2_Interaction_strength=[]; d2_Hamming_dist=[]; d2_Cosine_dist=[]; d2_nbld=[];
     ND_Hamming_dist=d2_Hamming_dist/d1_Hamming_dist;
     ND_Cosine_dist=d2_Cosine_dist/d1_Cosine_dist;
     ND_nbld=d2_nbld/d1_nbld;
-    save Discrepancy.mat ND_Interaction_strength ND_Hamming_dist ND_Cosine_dist ND_nbld
+    save ND_values.mat ND_Interaction_strength ND_Hamming_dist ND_Cosine_dist ND_nbld
