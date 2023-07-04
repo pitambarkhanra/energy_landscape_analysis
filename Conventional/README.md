@@ -47,7 +47,7 @@ If you run `Energy_landscape_analysis.m`, it reads these .mat files and run the 
     - "Hamming_dist":  indicates the discrepancy measure $d_H$.
     - "Cosine_dist": indicates the discrepancy measure $d_\rm{basin}$.
     - "nbld": indicates the discrepancy measure $d_L$.
-- "Discrepancy.mat" contains the four ND value as follows:
+- "ND_values.mat" contains the four ND value as follows:
     - "ND_Interaction_strength": contains the ND value for the discrepancy measure $d_J$.
     - "ND_Hamming_dist"; contains the ND value for the discrepancy measure $d_H$.
     - "ND_Cosine_dist": contains the ND value for the discrepancy measure $d_\rm{basin}$.
