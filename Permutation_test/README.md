@@ -6,7 +6,7 @@ When you use the code provided here, please cite the following paper:
 
 # What is this repository?
 
-The codes in this folder provides the MATLAB codes [NM: Please eradicate the term "key" from this readme. The point is that we are not sketching the usage of this code, but we need to tell precisely how to use the code.] to perform the permutation test for the energy landscape analysis on multi-variate time series data such as fMRI data using the conventional gradient-ascent algorithm to maximize the likelihood estimation and to estimate the parameter values. The code in this folder estimates the ND value for the four discrepancy measures proposed in Khanra *et al.* (2023).
+The codes in this folder provides the MATLAB codes [NM: Please eradicate the term "key" from this readme. The point is that we are not sketching the usage of this code, but we need to tell precisely how to use the code.][PK: I have changed the line] to perform the permutation test for the energy landscape analysis on multi-variate time series data such as fMRI data using the conventional gradient-ascent algorithm to maximize the likelihood estimation and to estimate the parameter values. The code in this folder estimates the ND value for the four discrepancy measures proposed in Khanra *et al.* (2023) for all the permutations.
 
 # Required software and packages
 
@@ -24,13 +24,14 @@ To start with, run `Energy_Landscape_permutation.m` to calculate the ND values f
 - List of participants, set in line 3 in the same file.
 - List of sessions, set in line 5 in the same file.
 - Threshold (i.e., $\mu' + 2\sigma'$ in subsection $2.7.2$ in Khanra *et al.* (2023)) to choose significant local minima, set in line 7 in the same file.
-- Name of the binarized multi-variate time series [NM: Is this what you mean? I added "multi-variate time series] data file, set in lines 16.
+- Number of permutations, set in line 9 in the same file.
+- Name of the binarized multi-variate time series [NM: Is this what you mean? I added "multi-variate time series][PK: Yes, it is. But is it necessary? Because in the conventional folder we have not mentioned this term.] data file, set in lines 16.
 
 # Output
-- ``ND_values.mat`` contains the four ND values as follows:
-    - **ND_Interaction_strength** contains the ND value for the discrepancy measure $d_J$.
-    - **ND_Hamming_dist** contains the ND value for the discrepancy measure $d_H$.
-    - **ND_Cosine_dist** contains the ND value for the discrepancy measure $d_\rm{basin}$.
-    - **ND_nbld** contains the ND value for the discrepancy measure $d_L$.
+- ``ND_values.mat`` contains the four ND values for all the permutation run as follows:
+    - **ND_Interaction_strength** contains the vector of ND values for the discrepancy measure $d_J$.
+    - **ND_Hamming_dist** contains the vector of ND values for the discrepancy measure $d_H$.
+    - **ND_Cosine_dist** contains the vector of ND values for the discrepancy measure $d_\rm{basin}$.
+    - **ND_nbld** contains the vector of ND values for the discrepancy measure $d_L$.
  
 [NM: ND values are not enough right? We need output of the permutation test. Because some people definitely want to see the ND values for each permutation run, if there are 10000 randomized runs (the number of randomized runs should also be specified as input above), the output should be 10000 ND values, plus the p value as well as the ND value for the original data. And the code to do this should be included in this folder.]
