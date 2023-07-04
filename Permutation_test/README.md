@@ -37,5 +37,3 @@ In sum, the main input is the binarized multi-variate time series for some parti
     - **NDper_Cosine_dist** contains the set of ND values for the discrepancy measure $d_\rm{basin}$.
     - **NDper_nbld** contains the set of ND values for the discrepancy measure $d_L$.
     - **p_values** contains the four p-values corresponding to the four discrepancy measures $d_J$, $d_H$, $d_\rm{basin}$, and $d_L$ respectively
- 
-[NM: ND values are not enough right? We need output of the permutation test. Because some people definitely want to see the ND values for each permutation run, if there are 10000 randomized runs (the number of randomized runs should also be specified as input above), the output should be 10000 ND values, plus the p value as well as the ND value for the original data. And the code to do this should be included in this folder.][PK: I have changed the code as well the input and output. ND values for the original data have to load as input file]
