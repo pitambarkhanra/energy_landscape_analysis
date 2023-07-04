@@ -20,13 +20,14 @@ We provide the MATLAB codes and key functions for example analysis and to calcul
 To start with, run `Energy_Landscape_permutation.m` to calculate the ND values for the four discrepancy measures. The key functions used in this code and the sample datasets are same as used in [the Conventional folder](https://github.com/pitambarkhanra/energy_landscape_analysis/tree/main/Conventional)
 
 # Input
-- Number of ROIs, set in line 2 in `Energy_landscape_permutation.m`.
+In sum, the main input is the binarized multi-variate time series for some participants and for some sessions per participant.
+- Name of the binarized multi-variate time series data files, set in lines 17 in `Energy_landscape_permutation.m`.
+- Number of ROIs, set in line 2 in the same file.
 - List of participants, set in line 3 in the same file.
 - List of sessions, set in line 5 in the same file.
 - Threshold (i.e., $\mu' + 2\sigma'$ in subsection $2.7.2$ in Khanra *et al.* (2023)) to choose significant local minima, set in line 7 in the same file.
 - Number of permutations, set in line 8 in the same file.
 - In line 9 load the `ND_values.mat` file generated from the [the Conventional folder](https://github.com/pitambarkhanra/energy_landscape_analysis/tree/main/Conventional)
-- Name of the binarized multi-variate time series [NM: Is this what you mean? I added "multi-variate time series][PK: Yes, it is. But is it necessary? Because in the conventional folder we have not mentioned this term.] data file, set in lines 16.
 
 # Output
 - ``permutation_results.mat`` contains the four ND values for all the permutation run and the corresponding p-values as follows:
