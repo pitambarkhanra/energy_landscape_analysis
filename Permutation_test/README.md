@@ -24,15 +24,16 @@ To start with, run `Energy_Landscape_permutation.m` to calculate the ND values f
 - List of participants, set in line 3 in the same file.
 - List of sessions, set in line 5 in the same file.
 - Threshold (i.e., $\mu' + 2\sigma'$ in subsection $2.7.2$ in Khanra *et al.* (2023)) to choose significant local minima, set in line 7 in the same file.
-- Number of permutations, set in line 9 in the same file.
+- Number of permutations, set in line 8 in the same file.
+- In line 9 load the `ND_values.mat` file generated from the [the Conventional folder](https://github.com/pitambarkhanra/energy_landscape_analysis/tree/main/Conventional)
 - Name of the binarized multi-variate time series [NM: Is this what you mean? I added "multi-variate time series][PK: Yes, it is. But is it necessary? Because in the conventional folder we have not mentioned this term.] data file, set in lines 16.
 
 # Output
 - ``permutation_results.mat`` contains the four ND values for all the permutation run and the corresponding p-values as follows:
-    - **ND_Interaction_strength** contains the vector of ND values for the discrepancy measure $d_J$.
-    - **ND_Hamming_dist** contains the vector of ND values for the discrepancy measure $d_H$.
-    - **ND_Cosine_dist** contains the vector of ND values for the discrepancy measure $d_\rm{basin}$.
-    - **ND_nbld** contains the vector of ND values for the discrepancy measure $d_L$.
+    - **NDper_Interaction_strength** contains the set of ND values for the discrepancy measure $d_J$.
+    - **NDper_Hamming_dist** contains the set of ND values for the discrepancy measure $d_H$.
+    - **NDper_Cosine_dist** contains the set of ND values for the discrepancy measure $d_\rm{basin}$.
+    - **NDper_nbld** contains the set of ND values for the discrepancy measure $d_L$.
     - **p_values** contains the four p-values corresponding to the four discrepancy measures $d_J$, $d_H$, $d_\rm{basin}$, and $d_L$ respectively
  
-[NM: ND values are not enough right? We need output of the permutation test. Because some people definitely want to see the ND values for each permutation run, if there are 10000 randomized runs (the number of randomized runs should also be specified as input above), the output should be 10000 ND values, plus the p value as well as the ND value for the original data. And the code to do this should be included in this folder.]
+[NM: ND values are not enough right? We need output of the permutation test. Because some people definitely want to see the ND values for each permutation run, if there are 10000 randomized runs (the number of randomized runs should also be specified as input above), the output should be 10000 ND values, plus the p value as well as the ND value for the original data. And the code to do this should be included in this folder.][PK: I have changed the code as well the input and output. ND values for the original data have to load as input file]
