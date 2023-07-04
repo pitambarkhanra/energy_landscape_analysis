@@ -12,6 +12,7 @@ This folder provides MATLAB codes to perform the permutation test for the energy
 
 - MATLAB2020 or later
 - MATLAB Statistics and Machine Learning Toolbox
+- You also need to download the Conventional folder in this respository and place it in the same level as the present folder.
 
 # How to use the code?
 
