@@ -6,7 +6,7 @@ When you use the code provided here, please cite the following paper:
 
 # What is this repository?
 
-The code in this folder provides the MATLAB code of key functions [NM: Please eradicate the term "key" from this readme. The point is that we are not sketching the usage of this code, but we need to tell precisely how to use the code.] to perform the permutation test for the energy landscape analysis on multi-variate time series data such as fMRI data using the conventional gradient-ascent algorithm to maximize the likelihood estimation and to estimate the parameter values. The code in this folder estimates the ND value for the four discrepancy measures proposed in Khanra *et al.* (2023).
+The codes in this folder provides the MATLAB codes [NM: Please eradicate the term "key" from this readme. The point is that we are not sketching the usage of this code, but we need to tell precisely how to use the code.] to perform the permutation test for the energy landscape analysis on multi-variate time series data such as fMRI data using the conventional gradient-ascent algorithm to maximize the likelihood estimation and to estimate the parameter values. The code in this folder estimates the ND value for the four discrepancy measures proposed in Khanra *et al.* (2023).
 
 # Required software and packages
 
