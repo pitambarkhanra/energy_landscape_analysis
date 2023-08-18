@@ -18,7 +18,7 @@ This folder provides MATLAB codes to perform the permutation test for the energy
 
 We provide the MATLAB codes and key functions for example analysis and to calculate the ND values for the four discrepancy measures proposed in the above mentioned article.
 
-To start with, run `Energy_Landscape_permutation.m` to calculate the ND values for the four discrepancy measures. The key functions used in this code and the sample datasets are same as used in [the Conventional folder](https://github.com/pitambarkhanra/energy_landscape_analysis/tree/main/Conventional)
+**To start with, run `Energy_Landscape_permutation.m` to calculate the ND values for the four discrepancy measures.** The key functions used in this code and the sample datasets are same as those provided in [the Conventional folder](https://github.com/pitambarkhanra/energy_landscape_analysis/tree/main/Conventional)
 
 # Input
 In sum, the main input is the binarized multi-variate time series for some participants and for some sessions per participant. The other inputs are as follows.
