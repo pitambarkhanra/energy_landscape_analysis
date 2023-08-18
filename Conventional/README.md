@@ -17,7 +17,7 @@ The code in this folder provides the MATLAB code of key functions to perform the
 
 We provide the MATLAB codes and key functions for example analysis and to calculate the parameter values with the four discrepancy measures proposed in the above mentioned article.
 
-To start with, run `Energy_landscape_analysis.m` to calculate the parameter values and the four discrepancy measures. The key functions used in this code are as follows:
+Run `Energy_landscape_analysis.m` to calculate the parameter values and the four discrepancy measures. The key functions used in this code are as follows:
 
 - `main.m`: This function estimates the parameter of the Ising model using the maximum likelihood method. This is a modification of the code developed by Takahiro Ezaki. For more details about his code and related functions, please refer to [Takahiro's Github repository](https://github.com/tkEzaki/energy-landscape-analysis).
 
