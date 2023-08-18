@@ -31,9 +31,9 @@ In sum, the main input is the binarized multi-variate time series for some parti
 - In line 9 load the `ND_values.mat` file generated from the [the Conventional folder](https://github.com/pitambarkhanra/energy_landscape_analysis/tree/main/Conventional)
 
 # Output
-- ``permutation_results.mat`` contains the four ND values for all the permutation run and the corresponding p-values as follows:
-    - **NDper_Interaction_strength** contains the set of ND values for the discrepancy measure $d_J$.
-    - **NDper_Hamming_dist** contains the set of ND values for the discrepancy measure $d_H$.
-    - **NDper_Cosine_dist** contains the set of ND values for the discrepancy measure $d_\rm{basin}$.
-    - **NDper_nbld** contains the set of ND values for the discrepancy measure $d_L$.
-    - **p_values** contains the four p-values corresponding to the four discrepancy measures $d_J$, $d_H$, $d_\rm{basin}$, and $d_L$ respectively
+- The output is saved in ``permutation_results.mat``. ``permutation_results.mat`` contains the four ND values for all the permutation runs and the corresponding p-values as follows:
+    - **NDper_Interaction_strength** contains the ND values for the discrepancy measure $d_\text{J}$ for all the permutation runs.
+    - **NDper_Hamming_dist** contains the ND values for the discrepancy measure $d_H$ for all the permutation runs.
+    - **NDper_Cosine_dist** contains the ND values for the discrepancy measure $d_\rm{basin}$ for all the permutation runs.
+    - **NDper_nbld** contains the ND values for the discrepancy measure $d_L$ for all the permutation runs.
+    - **p_values** contains the four p-values, each corresponding to $d_J$, $d_H$, $d_\rm{basin}$, and $d_L$ respectively
