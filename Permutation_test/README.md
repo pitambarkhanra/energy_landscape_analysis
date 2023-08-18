@@ -4,9 +4,9 @@ When you use the code provided here, please cite the following paper:
 
 [P. Khanra, J. Nakuci, S. Muldoon, T. Watanabe, N. Masuda, Reliability of energy landscape analysis of resting-state functional MRI data, arXiv preprint arXiv:2305.19573](https://arxiv.org/abs/2305.19573)
 
-# What is this repository?
+# About this folder
 
-This folder provides MATLAB codes to perform the permutation test for the energy landscape analysis on multi-variate time series data such as fMRI data. The estimation of the parameter values for the Ising model is done using the conventional gradient-ascent algorithm to maximize the likelihood. The code in this folder estimates the ND value for the four discrepancy measures proposed in Khanra *et al.* (2023) for all the permutations.
+This folder provides MATLAB codes to perform the permutation test for the energy landscape analysis on multi-variate time series data such as fMRI data. The estimation of the parameter values for the Ising model is done using the conventional gradient-ascent algorithm to maximize the likelihood. The code in this folder estimates the ND value for all the permutation runs and returns the p-value for each of the four discrepancy measures proposed in Khanra *et al.* (2023).
 
 # Required software and packages
 
