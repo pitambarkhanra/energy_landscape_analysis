@@ -6,7 +6,7 @@ When you use the code provided here, please cite the following paper:
 
 # About this folder
 
-This folder provides MATLAB codes to perform the permutation test for the energy landscape analysis on multi-variate time series data such as fMRI data. The estimation of the parameter values for the Ising model is done using the conventional gradient-ascent algorithm to maximize the likelihood. The code in this folder estimates the ND value for all the permutation runs and returns the p-value for each of the four discrepancy measures proposed in Khanra *et al.* (2023).
+This folder provides MATLAB codes to perform the permutation test for the energy landscape analysis on multi-variate time series data such as fMRI data. The estimation of the parameter values for the Ising model is done using the conventional gradient-ascent algorithm to maximize the likelihood. The code in this folder estimates the ND value for all the permutation runs and returns the p-value for each of the four discrepancy measures proposed in Khanra *et al.* (2024).
 
 # Required software and packages
 
