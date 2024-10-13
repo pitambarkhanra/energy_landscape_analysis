@@ -2,7 +2,7 @@
 
 When you use the code provided here, please cite the following paper:
 
-[P. Khanra, J. Nakuci, S. Muldoon, T. Watanabe, N. Masuda, Reliability of energy landscape analysis of resting-state functional MRI data, arXiv preprint arXiv:2305.19573](https://arxiv.org/abs/2305.19573)
+[P. Khanra, J. Nakuci, S. Muldoon, T. Watanabe, N. Masuda, Reliability of energy landscape analysis of resting-state functional MRI data, European Journal of Neuroscience, 60, 4265-4290 (2024)](https://doi.org/10.1111/ejn.16390)
 
 # About this folder
 
