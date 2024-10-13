@@ -2,11 +2,11 @@
 
 When you use the code provided here, please cite the following paper:
 
-[P. Khanra, J. Nakuci, S. Muldoon, T. Watanabe, N. Masuda, Reliability of energy landscape analysis of resting-state functional MRI data, arXiv preprint arXiv:2305.19573](https://arxiv.org/abs/2305.19573)
+[P. Khanra, J. Nakuci, S. Muldoon, T. Watanabe, N. Masuda, Reliability of energy landscape analysis of resting-state functional MRI data, European Journal of Neuroscience, 60, 4265-4290 (2024)](https://doi.org/10.1111/ejn.16390)
 
 # What is this repository?
 
-The code in this folder provides the MATLAB code of key functions to perform the energy landscape analysis on multi-variate time series data like fMRI data using the conventional gradient-ascent algorithm to maximize the likelihood estimation and to estimate the parameter values. The code in this folder estimates the four discrepancy measures proposed in Khanra *et al.* (2023).
+The code in this folder provides the MATLAB code of key functions to perform the energy landscape analysis on multi-variate time series data like fMRI data using the conventional gradient-ascent algorithm to maximize the likelihood estimation and to estimate the parameter values. The code in this folder estimates the four discrepancy measures proposed in Khanra *et al.* (2024).
 
 # Required software and packages:
 
